@@ -3,7 +3,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
 
 
-**/node_modules
+# dependencies
+/node_modules
 
 ### Node ###
 # Logs
