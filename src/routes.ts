@@ -12,7 +12,7 @@ const conectionsController = new ConectionsController();
 routes.post('/classes', classesControllers.create);
 routes.get('/classes', classesControllers.index);
 
-routes.post('/connectios', conectionsController.create);
-routes.get('/connectios', conectionsController.index);
+routes.post('/connections', conectionsController.create);
+routes.get('/connections', conectionsController.index);
 
 export default routes;

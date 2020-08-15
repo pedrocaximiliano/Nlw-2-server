@@ -49,7 +49,7 @@ export default class ClassesController {
         const {
             name,
             avatar,
-            whatsapp,
+            whatsApp,
             bio,
             subject,
             cost,
@@ -62,7 +62,7 @@ export default class ClassesController {
             const insertedUsersId = await trx('users').insert({
                 name,
                 avatar,
-                whatsapp,
+                whatsApp,
                 bio,
             });
 

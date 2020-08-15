@@ -1,7 +1,7 @@
 import Knex from 'Knex';
 
-export async function up(Knex: Knex) {
-  return Knex.schema.createTable('class_schedule', table => {
+export async function up(knex: Knex) {
+  return knex.schema.createTable('class_schedule', table => {
          table.increments('id').primary();
 
          table.integer('week_day').notNullable();

@@ -1,7 +1,7 @@
 import Knex from 'Knex';
 
-export async function up(Knex: Knex) {
-  return Knex.schema.createTable('connections', table => {
+export async function up(knex: Knex) {
+  return knex.schema.createTable('connections', table => {
          table.increments('id').primary();
 
          table.integer('user_id')
@@ -12,7 +12,7 @@ export async function up(Knex: Knex) {
          .onUpdate('CASCADE'); // faz um update todas as aulas do professor
 
          table.timestamp('created_at')
-         .defaultTo(Knex.raw('CURRENT_TIMESTAMP'))
+         .defaultTo(knex.raw('CURRENT_TIMESTAMP'))
          .notNullable()
   })
 }
